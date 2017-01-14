@@ -1,0 +1,30 @@
+\contentsline {section}{\numberline {1}Design of Model}{2}
+\contentsline {subsection}{\numberline {1.1}Build binomial model}{2}
+\contentsline {subsection}{\numberline {1.2}Methods to get $u$}{2}
+\contentsline {subsubsection}{\numberline {1.2.1}up/down factor method}{2}
+\contentsline {paragraph}{Step1:}{2}
+\contentsline {paragraph}{Step2:}{2}
+\contentsline {paragraph}{Step3:}{3}
+\contentsline {subsubsection}{\numberline {1.2.2}implied volatilities}{3}
+\contentsline {subsubsection}{\numberline {1.2.3}volatility based on historical data}{3}
+\contentsline {paragraph}{Step1: computation for daily volatility}{3}
+\contentsline {paragraph}{Step2: estimating the standard deviation of $u_i$}{3}
+\contentsline {paragraph}{Step3: computation for annual volatility}{3}
+\contentsline {subsubsection}{\numberline {1.2.4}volatility using GARCH}{3}
+\contentsline {paragraph}{Step 1: Choose the sample of our model}{4}
+\contentsline {paragraph}{Step 2: Compute the historical volatility of every three month of the sample space}{4}
+\contentsline {paragraph}{Step 3: Estimate the parameter of GARCH(1,1）}{4}
+\contentsline {paragraph}{Step 4: Forecast the volatility of next three months}{5}
+\contentsline {section}{\numberline {2}Calibration}{5}
+\contentsline {subsection}{\numberline {2.1}Statistics}{5}
+\contentsline {subsection}{\numberline {2.2}Plots}{7}
+\contentsline {section}{\numberline {3}Explanation}{16}
+\contentsline {section}{\numberline {4}Pricing GE option (maturity March 15 2015)}{17}
+\contentsline {section}{References}{19}
+\contentsline {section}{Appendix}{20}
+\contentsline {subsection}{\numberline {.1}Binomial Model--crrModel.py}{20}
+\contentsline {subsection}{\numberline {.2}Pricing all options--crrPrice.py}{21}
+\contentsline {subsection}{\numberline {.3}Testing methods--crrTesting.py}{23}
+\contentsline {subsection}{\numberline {.4}Pricing particular options--crrCalc.py}{26}
+\contentsline {subsection}{\numberline {.5}Scraping option quotes--scrOpQuotes.py}{27}
+\contentsline {subsection}{\numberline {.6}Scraping stock prices--scrStPrice.py}{28}

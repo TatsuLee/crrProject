@@ -1,0 +1,117 @@
+\documentclass[12pt]{article}
+%\usepackage{amsmath}
+\usepackage[fleqn]{amsmath}
+\usepackage{amsfonts}
+\usepackage[letterpaper]{geometry}
+\usepackage{fontspec}
+\setmainfont{Arial}
+\usepackage{titlesec}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{extarrows}
+\usepackage{float}
+\usepackage{lscape}
+\usepackage{csvsimple}
+\usepackage{appendix}
+\definecolor{light-gray}{gray}{0.95}
+\lstset{ 
+        language=Python,                   % choose the language of the code
+        basicstyle=\scriptsize,                   % the size of the fonts that are used for the code
+        numbers=left,                      % where to put the line-numbers
+        numberstyle=\footnotesize,         % the size of the fonts that are used for the line-numbers
+        stepnumber=1,    % the step between two line-numbers. If it's 1 each line will be numbered
+        numbersep=10pt,  % how far the line-numbers are from the code
+        %backgroundcolor=\color{light-gray},    % background color. add \usepackage{color}
+        showspaces=false,                  % show spaces adding particular underscores
+        showstringspaces=false,            % underline spaces within strings
+        showtabs=false,                    % show tabs within strings adding particular underscores
+        frame=single,                      % adds a frame around the code
+%       tabsize=2,                         % sets default tabsize to 2 spaces
+%       captionpos=b,                      % sets the caption-position to bottom
+        breaklines=true,                   % sets automatic line breaking
+        breakatwhitespace=false,           % sets if automatic breaks should only happen at whitespace
+        escapeinside={\%*}{*)}             % if you want to add a comment within your code
+}
+
+\geometry{left=2cm,right=2cm,top=2cm,bottom=2cm}
+\linespread{1.5}\selectfont
+\newpagestyle{main}{            
+    \sethead{Math548 Project1}{Team5}{\today}
+    \setfoot{}{\thepage}{}
+}
+\begin{document}
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+ 
+%----------------------------------------------------------------------------------------
+%	HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+\textsc{\LARGE Illinois Institute of Technology}\\[1.5cm] % Name of your university/college
+\textsc{\Large Math548 }\\[0.5cm] % Major heading such as course name
+\textsc{\large Mathematical Finance I}\\[0.5cm] % Minor heading such as course title
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\HRule \\[0.4cm]
+{ \huge \bfseries Project \# 1 Report}\\[0.3cm] % Title of your document
+\HRule \\[1.5cm]
+ 
+%----------------------------------------------------------------------------------------
+%	AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Team 5:}\\
+Xie Hua \quad Li Da \quad Chen Jielin \\
+Liu Zhaojian\quad Zhao Xiyu\\
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Instructor:} \\
+Prof. \textsc{Igor Cialenco} % Supervisor's Name
+\end{flushright}
+\end{minipage}\\[4cm]
+
+% If you don't want a supervisor, uncomment the two lines below and remove the section above
+%\Large \emph{Author:}\\
+%John \textsc{Smith}\\[3cm] % Your name
+
+%----------------------------------------------------------------------------------------
+%	DATE SECTION
+%----------------------------------------------------------------------------------------
+
+{\large \today}\\[3cm] % Date, change the \today to a set date if you want to be precise
+
+%----------------------------------------------------------------------------------------
+%	LOGO SECTION
+%----------------------------------------------------------------------------------------
+
+%\includegraphics{Logo}\\[1cm] % Include a department/university logo - this will require the graphicx package
+ 
+----------------------------------------------------------------------------------------
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+\thispagestyle{empty}
+\newpage
+\setcounter{tocdepth}{3}
+\tableofcontents
+\thispagestyle{empty}
+\pagestyle{main}
+\setcounter{page}{1} 
+\include{SDD}
+\include{ref}
+\include{appendix}
+\end{document}
